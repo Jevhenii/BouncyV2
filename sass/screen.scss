@@ -1,0 +1,467 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+	background-color:#FAFAFA;
+}
+
+.ba-header {
+	width:100%;
+	min-height:700px;
+	background-image:url(../cssbasic/img/IMAGE.svg);
+	background-repeat:no-repeat;
+	background-size:cover;
+		.header_text {
+			display:flex;
+			width:80%;
+			margin:0 auto;
+			flex-direction: column;
+			height:40rem;
+			align-items:center;
+			justify-content:center;
+			position:relative;
+				h1 {
+					font-family: 'Source Sans Pro', sans-serif;
+					color:  #ffffff;
+					font-size: 35px;
+					font-weight: 300;
+					letter-spacing: 7px;
+					line-height: 70px;
+					
+				}
+				p {
+					font-family: 'Open Sans', sans-serif;
+					color:  #ffffff;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 28px;
+					
+				}
+				a {
+					display:inline-block;
+					position:absolute;
+					margin-top:13rem;	
+				}
+		}
+		.head {
+			display:flex;
+			width:80%;
+			height:5rem;
+			justify-content:space-between;
+			margin:0 auto;
+			align-items:center;
+				.list{
+						width:50%;
+						display:flex;
+						justify-content:space-around;
+						list-style:none;
+							.manu-link {
+								text-decoration:none;
+								color:#FFF;
+								font-family: 'Roboto', sans-serif;
+								width:140px;
+								height:40px;
+								display:inline-block;
+								text-align:center;
+								padding-top:10px;
+									&:hover{
+										border:2px solid white;
+										-webkit-border-radius: 200px;
+										-moz-border-radius: 200px;
+										border-radius: 200px;
+										transition-direction:0.5;
+										background-color:#19bd9a;
+									}
+							}
+					}
+		}
+}
+
+.wrapper {
+	width:100%;
+	min-height:900px;
+	background-color:#F0F0F0;
+	
+		.portfolio_discription {
+			width:60%;
+			margin:0 auto;
+			height:10rem;
+			text-align:center;
+			display:flex;
+			align-items:center;
+			justify-content:center;
+			flex-direction:column;
+				h3 {
+					color:  #333b46;
+					font-size: 20px;
+					font-weight: 300;
+					letter-spacing: 4px;
+					line-height: 12px;
+					font-family: 'Source Sans Pro', sans-serif;
+				}
+
+				.portfilio_p {
+					font-family: 'Open Sans', sans-serif;
+					color: #81868e;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 28px;
+				}	
+		
+		}
+
+
+
+	.masonry {
+		width:100%;
+		min-height:800px;
+			.button-group {
+				display:flex;
+				width:30%;
+				margin:0 auto;
+				justify-content:space-around;
+				background-color:none;
+				height:10rem;
+					button {
+						border: none;
+						background-color:#F0F0F0;
+						font-family: 'Open Sans', sans-serif;
+						color:  #464646;
+						font-size: 16px;
+						font-weight: 400;
+						line-height: 12px;
+						height:3rem;
+							&:focus {
+								outline-style: none;
+							    outline-width: 0px !important;
+							    outline-color: none !important;
+							}
+						
+							&:hover {
+								border-bottom:1.5px solid #19bd9a;
+							}
+					}
+			}
+			.grid:after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+			.grid {
+				width:80%;
+				margin:auto;		
+					.grid-item {
+						float: left;
+						margin-bottom:25px;
+						padding-left:40px;
+				
+							img {
+								display: block;
+  								max-width: 100%;
+							}
+					}
+				
+					.grid-item , .grid-sizer {
+						width: 25%;
+						
+				}
+			}
+	}	
+
+}
+.the_team {
+	width:80%;
+	min-height:500px;
+	background-color:#FCFCFC;
+	margin:0 auto;
+	
+		.team_slider {
+			width:100%;
+			margin:0 auto;
+			height:500px;
+				.block {
+					display:flex;
+					margin:auto;
+					background-color:#FAFAFA;
+					width:100%;
+					height:500px;
+					justify-content:space-between;
+					align-items:center;
+						.hipster_descr {
+							display:flex;
+							width:50%;
+							height:400px;
+							flex-direction:column;
+							text-align: right;
+							margin:0 auto;
+							
+							
+								.name {
+									font-family: 'Open Sans', sans-serif;
+									color:  #81868e;
+									font-size: 25px;
+									font-weight: 400;
+									line-height: 25px;
+								}
+								.creative {
+									color:  #81868e;
+									font-size: 14px;
+									font-weight: 300;
+									letter-spacing: 1.4px;
+									line-height: 25px;
+									font-family: 'Source Sans Pro', sans-serif;
+
+								}
+								.hipster_info {
+									font-family: 'Open Sans', sans-serif;
+									color: #81868e;
+									font-size: 16px;
+									font-weight: 400;
+									line-height: 28px;
+								}
+						}
+						.hipster {
+							display:flex;
+							width:50%;
+							height:350px;
+							margin:0 auto;
+							
+						}
+				}
+		}
+		.team_discription {
+			width:100%;
+			margin:0 auto;
+			height:10rem;
+			text-align:center;
+			display:flex;
+			align-items:center;
+			justify-content:center;
+			flex-direction:column;
+			background-color:#FAFAFA;
+				h3 {
+					color:  #333b46;
+					font-size: 20px;
+					font-weight: 300;
+					letter-spacing: 4px;
+					line-height: 12px;
+					font-family: 'Source Sans Pro', sans-serif;
+				}
+
+				.team_p {
+					font-family: 'Open Sans', sans-serif;
+					color: #81868e;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 28px;
+					overflow:auto;
+				}	
+		
+		}
+}
+
+.contact {
+	width:100%;
+	height:200px;
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	background-image:url(../cssbasic/img/Layer.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	margin-top:100px;
+	 	div {
+	 		.contact_us {
+	 			font-family: 'Open Sans', sans-serif;
+				color:  #ffffff;
+				font-size: 20px;
+				font-weight: 400;
+				line-height: 25px;
+				text-align: center;
+	 		}
+	 	
+	 	}
+	 	div {
+	 		a {
+	 			text-decoration:none;
+				color:#FFF;
+				font-family: 'Roboto', sans-serif;
+				width:140px;
+				height:40px;
+				display:inline-block;
+				text-align:center;
+				padding-top:10px;
+				border:2px solid white;
+				-webkit-border-radius: 200px;
+				-moz-border-radius: 200px;
+				border-radius: 200px;
+				margin-top:30px;
+					&:hover{
+						background-color:#19bd9a;
+					}
+	 		}
+	 	}
+}
+
+.testimonials {
+	width:80%;
+	height:600px;
+	margin:0 auto;
+	
+		.test_slider {
+			display:flex;
+			width:90%;
+			margin:0 auto;
+			height:300px;
+			background-color:#FCFCFC;
+			
+				.box {
+					display:flex;
+					margin:auto;
+					background-color:#fff;
+					width:100%;
+					height:300px;
+					justify-content:space-between;
+					align-items:center;
+					padding-top:150px;
+						
+						.china_logo {
+							width:20%;
+							height:300px;
+							margin:0 auto;
+							
+						}
+						.china_descr {
+							width:80%;
+							height:300px;
+							flex-direction:column;
+							text-align:left;
+							margin:0 auto;
+							display:flex;
+								p {
+									font-family: 'Open Sans', sans-serif;
+									color: #81868e;
+									font-size: 16px;
+									line-height: 28px;
+									overflow:auto;
+								}
+
+								.name {
+									font-family: 'Open Sans', sans-serif;
+									color:  #19bd9a;
+									font-size: 16px;
+									font-weight: 700;
+									line-height: 20px;
+								}
+								.founder {
+									font-family: OpenSans;
+									color:  #464646;
+									font-size: 14px;
+									font-weight: 400;
+									line-height: 20px;
+								}
+						}
+				}
+		}
+		.test_discription {
+			width:60%;
+			margin:0 auto;
+			height:10rem;
+			text-align:center;
+			display:flex;
+			align-items:center;
+			justify-content:center;
+			flex-direction:column;
+				h3 {
+					color:  #333b46;
+					font-size: 20px;
+					font-weight: 300;
+					letter-spacing: 4px;
+					line-height: 12px;
+					font-family: 'Source Sans Pro', sans-serif;
+				}
+
+				.test_p {
+					font-family: 'Open Sans', sans-serif;
+					color: #81868e;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 28px;
+					overflow:auto;
+				}	
+		}
+}
+
+.maps {
+	width:100%;
+	height:600px;
+		#map {
+			width:100%;
+			height:400px;
+		}
+		.map_discription {
+			width:60%;
+			margin:0 auto;
+			height:10rem;
+			text-align:center;
+			display:flex;
+			align-items:center;
+			justify-content:center;
+			flex-direction:column;
+				h3 {
+					color:  #333b46;
+					font-size: 20px;
+					font-weight: 300;
+					letter-spacing: 4px;
+					line-height: 12px;
+					font-family: 'Source Sans Pro', sans-serif;
+				}
+
+				.map_p {
+					font-family: 'Open Sans', sans-serif;
+					color: #81868e;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 28px;
+					overflow:auto;
+				}	
+		}
+}
+
+.ba-footer {
+	width:100%;
+	min-height:200px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex-direction:column;
+		a {
+			box-sizing:border-box;
+				&:hover{
+					opacity:0.5;
+				}
+		}
+		span {
+					font-family: 'Open Sans', sans-serif;
+					color: #81868e;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 28px;
+		}
+		.sociable {
+			display:flex;
+			width:15%;
+			margin:0 auto;
+			justify-content:space-around;
+			margin-top:50px;
+		}
+}
